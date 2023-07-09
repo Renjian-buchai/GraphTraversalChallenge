@@ -19,7 +19,9 @@ std::vector<std::string> convert_path_STR_TO_STRVEC(std::string path) {
 		} else if(!toAdd.empty()) {
 			toReturn.push_back(toAdd); toAdd.clear();
 		}
+		path.erase(0, 1);
 	}
+	toReturn.push_back(toAdd);
 	return toReturn;
 }
 
