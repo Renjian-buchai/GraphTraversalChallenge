@@ -11,3 +11,6 @@
 int measure_path_VEC(std::vector<int> path, std::vector<std::vector<int>> graph);
 
 int measure_path_ARR(std::vector<int> path, int **graph, int graphsize);
+
+template <typename containerIterator>
+int measure_path(std::vector<int> path, containerIterator begin, containerIterator end);
